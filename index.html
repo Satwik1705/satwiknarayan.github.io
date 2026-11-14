@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Satwik Narayan — Data Science Intern interested in applied AI, workflow automation, and technology-driven problem solving." />
+  <title>Satwik Narayan | Applied AI & Data</title>
+  <style>
+    :root{--bg:#0b1020;--panel:#121a2e;--panel2:#17223a;--text:#edf2ff;--muted:#aab6ce;--line:rgba(255,255,255,.1);--accent:#8bd3ff;--accent2:#b7a5ff;--max:1080px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(ellipse at 80% 0%,#1b2c50 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    nav{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.04em}.brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:25px;color:var(--muted);font-size:14px}.navlinks a:hover,.textlink:hover{color:var(--accent)}
+    .hero{padding:104px 0 88px;display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:center}
+    .eyebrow{color:var(--accent);font-size:13px;font-weight:750;letter-spacing:.16em;text-transform:uppercase}
+    h1{font-size:clamp(42px,7vw,72px);line-height:1.04;letter-spacing:-.055em;margin:18px 0 20px}
+    h1 em{font-style:normal;color:var(--accent)}.lead{font-size:19px;max-width:680px;color:var(--muted)}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:12px;font-weight:700;border:1px solid var(--line);transition:.2s}
+    .btn.primary{background:linear-gradient(120deg,var(--accent),#b8c8ff);color:#091120;border:0}.btn:hover{transform:translateY(-2px)}
+    .hero-card{background:linear-gradient(150deg,rgba(139,211,255,.13),rgba(183,165,255,.08));border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 25px 70px rgba(0,0,0,.22)}
+    .orb{height:150px;width:150px;border-radius:50%;margin:0 auto 22px;background:radial-gradient(circle at 35% 30%,#e8f8ff,#8bd3ff 28%,#6f78bd 64%,#27314f);box-shadow:0 0 70px rgba(139,211,255,.22)}
+    .hero-card h3{text-align:center;margin:0 0 5px}.hero-card p{text-align:center;color:var(--muted);margin:0;font-size:14px}
+    .quick{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:22px}.quick div{background:rgba(8,13,27,.4);padding:12px;border-radius:12px;font-size:13px;color:var(--muted)}.quick strong{display:block;color:var(--text);font-size:14px}
+    section{padding:72px 0;border-top:1px solid var(--line)}.section-head{margin-bottom:30px}.section-head h2{font-size:32px;letter-spacing:-.03em;margin:8px 0}.section-head p{color:var(--muted);margin:0}
+    .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:25px}.panel{background:rgba(18,26,46,.82);border:1px solid var(--line);border-radius:18px;padding:25px}.panel p{color:var(--muted);margin:0}
+    .skill-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.skill{background:var(--panel2);border:1px solid var(--line);border-radius:13px;padding:14px}.skill strong{display:block;margin-bottom:5px}.skill span{font-size:14px;color:var(--muted)}
+    .timeline{border-left:1px solid rgba(139,211,255,.45);padding-left:24px;margin-left:8px}.role{position:relative}.role:before{content:"";position:absolute;left:-30px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(139,211,255,.12)}
+    .meta{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.04em}.role h3{margin:5px 0}.role ul{color:var(--muted);padding-left:20px}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{background:linear-gradient(150deg,var(--panel),#10182b);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;min-height:255px}
+    .project .num{font-size:12px;color:var(--accent);letter-spacing:.12em;font-weight:800}.project h3{font-size:21px;margin:12px 0 8px}.project p{color:var(--muted);margin:0 0 18px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}.tag{font-size:12px;padding:5px 9px;border-radius:999px;background:rgba(139,211,255,.09);border:1px solid rgba(139,211,255,.16);color:#cdeeff}
+    .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.edu-item{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px}.edu-item p{color:var(--muted);margin:5px 0 0}
+    .contact{display:flex;justify-content:space-between;gap:25px;align-items:center;background:linear-gradient(120deg,rgba(139,211,255,.12),rgba(183,165,255,.1));border:1px solid var(--line);border-radius:22px;padding:32px}.contact h2{margin:0 0 7px;font-size:30px}.contact p{margin:0;color:var(--muted)}
+    footer{padding:28px 0;color:var(--muted);font-size:13px;text-align:center}
+    @media(max-width:760px){.navlinks{gap:12px;font-size:12px}.hero{grid-template-columns:1fr;padding:70px 0;gap:32px}.hero-card{max-width:420px}.about-grid,.projects,.edu-grid{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}.quick{grid-template-columns:1fr 1fr}}
+    @media(max-width:460px){.navlinks a:nth-child(2),.navlinks a:nth-child(4){display:none}.wrap{width:min(var(--max),calc(100% - 28px))}section{padding:55px 0}.lead{font-size:17px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#home">SATWIK<span>.</span></a>
+  <div class="navlinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+</nav></div></header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow">Data Science Intern · Applied AI · Automation</div>
+      <h1>Building at the intersection of <em>AI</em> and real-world problems.</h1>
+      <p class="lead">I’m Satwik Narayan, a Computer Science graduate specialising in AI and Machine Learning. I’m interested in applied AI, workflow automation, data-driven products, and practical technology solutions.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore my work</a>
+        <a class="btn" href="mailto:satwiknarayan7@gmail.com">Contact me</a>
+        <a class="btn" href="https://linkedin.com/in/satwik-narayan-821411241/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <div class="orb"></div>
+      <h3>Satwik Narayan</h3>
+      <p>Computer Science · AI & Machine Learning</p>
+      <div class="quick">
+        <div><strong>Current role</strong>Data Science Intern</div>
+        <div><strong>Organisation</strong>FINVIJ</div>
+        <div><strong>Focus</strong>Applied AI & automation</div>
+        <div><strong>Based in</strong>India</div>
+      </div>
+    </aside>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">01 / About</div><h2>Curious by nature. Analytical by approach.</h2><p>A practical blend of technical learning and product exposure.</p></div>
+    <div class="about-grid">
+      <div class="panel"><p>I’m a Computer Science graduate from Mohan Babu University, specialising in Artificial Intelligence and Machine Learning. At FINVIJ, I contribute to product development and feature enhancements across financial technology solutions. My work includes validation, troubleshooting, and supporting development initiatives across lending and decision-intelligence workflows. I use AI tools to support coding, debugging, and development tasks. I’m continuing to build my practical skills in Python, data analysis, machine learning, and AI-enabled workflows.</p></div>
+      <div class="panel"><h3 style="margin-top:0">What I’m interested in</h3><div class="tags"><span class="tag">Applied AI</span><span class="tag">Machine Learning</span><span class="tag">LLMs</span><span class="tag">Workflow Automation</span><span class="tag">Data Analytics</span><span class="tag">FinTech</span><span class="tag">Product Quality</span></div></div>
+    </div>
+  </div></section>
+
+  <section id="experience"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">02 / Experience</div><h2>Professional experience</h2><p>Product development exposure in financial technology.</p></div>
+    <div class="panel timeline"><div class="role">
+      <div class="meta">JUNE 2026 — PRESENT</div><h3>Data Science Intern · FINVIJ</h3>
+      <ul>
+        <li>Contribute to product development and feature enhancements across financial technology solutions.</li>
+        <li>Support product functionality through troubleshooting, issue resolution, and validation.</li>
+        <li>Contribute to development initiatives across lending and decision-intelligence workflows.</li>
+        <li>Use AI tools to accelerate coding, debugging, research, and development tasks.</li>
+        <li>Apply machine learning and modelling concepts to lending-related use cases.</li>
+        <li>Collaborate with the team on product improvements and technical solutions.</li>
+      </ul>
+      <p style="color:var(--muted);font-size:13px">Company-owned work is not displayed here to respect confidentiality.</p>
+    </div></div>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">03 / Selected work</div><h2>Projects</h2><p>Academic and personal project work.</p></div>
+    <div class="projects">
+      <article class="project"><div class="num">PROJECT 01</div><h3>AI-Powered Student Success Prediction System</h3><p>A predictive analytics project exploring student performance through academic and behavioural indicators. Examined outcome patterns and how prediction insights could support early academic intervention.</p><div class="tags"><span class="tag">Python</span><span class="tag">Predictive Analytics</span><span class="tag">Data Preparation</span><span class="tag">Feature Analysis</span></div></article>
+      <article class="project"><div class="num">PROJECT 02</div><h3>IoT Smart Plant Watering Automation System</h3><p>An automated plant-watering system using sensor inputs to support timely watering and reduce manual monitoring. Included a mobile interface for monitoring and user control.</p><div class="tags"><span class="tag">IoT</span><span class="tag">Automation Logic</span><span class="tag">Sensor Inputs</span><span class="tag">Flutter Exposure</span></div></article>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">04 / Capabilities</div><h2>Skills & tools</h2><p>Foundational and working knowledge across these areas.</p></div>
+    <div class="skill-grid">
+      <div class="skill"><strong>Programming & Data</strong><span>Python, SQL, Pandas, NumPy, data preparation</span></div>
+      <div class="skill"><strong>Machine Learning</strong><span>Regression, classification, decision trees, clustering, model evaluation</span></div>
+      <div class="skill"><strong>AI & Automation</strong><span>AI-assisted development, workflow automation, n8n, LLM concepts</span></div>
+      <div class="skill"><strong>Development</strong><span>APIs, Flask, Git, GitHub, software testing</span></div>
+      <div class="skill"><strong>Web</strong><span>HTML, CSS, JavaScript</span></div>
+      <div class="skill"><strong>Core strengths</strong><span>Analytical problem solving, learning agility, collaboration, communication</span></div>
+    </div>
+  </div></section>
+
+  <section id="education"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">05 / Education</div><h2>Education & certifications</h2></div>
+    <div class="edu-grid">
+      <div class="edu-item"><strong>Mohan Babu University</strong><p>B.Tech · Computer Science Engineering (AI & ML)<br>2022–2026</p></div>
+      <div class="edu-item"><strong>Certifications · Coursera</strong><p>Introduction to Artificial Intelligence<br>Predictive Modeling and Analytics<br>Practical Predictive Analytics<br>Strategic Innovation: Managing Innovation Initiatives</p></div>
+    </div>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <div class="contact"><div><div class="eyebrow">06 / Get in touch</div><h2>Let’s connect.</h2><p>Open to opportunities in applied AI, data, automation, and technology.</p></div>
+      <div class="actions" style="margin:0"><a class="btn primary" href="mailto:satwiknarayan7@gmail.com">Email me ↗</a><a class="btn" href="https://linkedin.com/in/satwik-narayan-821411241/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Satwik Narayan · Built as a personal portfolio.</div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
